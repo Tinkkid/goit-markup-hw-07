@@ -1,0 +1,36 @@
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.check-border {
+    opacity: 1;
+}
+
+.check {
+    opacity: 0;
+    transition: fill 250 ms $timing-function;
+}
+
+.checkbox:checked+.check-icon>.check {
+    opacity: 1;
+    fill: $background-color-hover;
+}
+
+.checkbox:checked+.check-icon>.check-border {
+    opacity: 0;
+}

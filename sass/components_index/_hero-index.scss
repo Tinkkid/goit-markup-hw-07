@@ -1,0 +1,53 @@
+.hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $background-color-added;
+    text-align: center;
+    background-image: linear-gradient(to right,
+            $hero-bg-overlay,
+            $hero-bg-overlay),
+        url("../images/images-index/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 696px;
+    color: $added-text-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero__btn {
+    min-width: 216px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: 0px 4px 4px $color-shadow;
+    background-color: $logo-button-text-color;
+    color: $added-text-color;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background-color 250ms $timing-function;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    background-color: $active-button-color;
+}

@@ -1,0 +1,71 @@
+.section-team {
+    background-color: $secondary-background-color;
+}
+
+.team {
+    display: flex;
+}
+
+.team__list {
+    box-shadow: $modal-shadow;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team__border {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: $primary-background-color;
+}
+
+.team__name {
+    margin-bottom: 10px;
+
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team__position {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.social-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon__forteam {
+    justify-content: center;
+}
+
+.social-icon__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: fill 250ms $timing-function,
+        background-color 250ms $timing-function;
+}
+
+.social-icon__active {
+    fill: $fill-svg-social;
+}
+
+.social-icon__active:hover,
+.social-icon__active:focus {
+    background-color: $logo-button-text-color;
+    fill: $primary-background-color;
+}
