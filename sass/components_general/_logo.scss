@@ -5,17 +5,30 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    {
+        &__letters {
+                color: $logo-button-text-color;
+            }
+        &__header {
+            margin-right: 92px;
+            color: $text-color;
+        }
+        &__footer {
+            margin-bottom: 20px;
+            color: $added-text-color;
+        }
+    }
 }
 
-.logo__letters {
-    color: $logo-button-text-color;
-}
+// .logo__letters {
+//     color: $logo-button-text-color;
+// }
 
-.logo__header {
-    margin-right: 92px;
-    color: $text-color;
-}
-.logo__footer {
-    margin-bottom: 20px;
-    color: $added-text-color;
-}
+// .logo__header {
+//     margin-right: 92px;
+//     color: $text-color;
+// }
+// .logo__footer {
+//     margin-bottom: 20px;
+//     color: $added-text-color;
+// }

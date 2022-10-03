@@ -13,7 +13,7 @@
     padding: 40px;
 }
 
-.form-title {
+.form__title {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -22,7 +22,7 @@
     color: $secondary-text-color;
 }
 
-.form-label {
+.form__label {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -32,11 +32,11 @@
     letter-spacing: 0.01em;
 }
 
-.form-label:last-child {
+.form__label:last-child {
     margin-bottom: 0px;
 }
 
-.form-input,
+.form__input,
 .feedback {
     border: $border-form-order;
     border-radius: 4px;
@@ -44,13 +44,13 @@
     transition: border-color 250ms $timing-function;
 }
 
-.form-input {
+.form__input {
     padding-left: 42px;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 
-.form-icon {
+.form__icon {
     position: absolute;
     display: block;
     top: 50%;
@@ -58,11 +58,11 @@
     transition: fill 250ms $timing-function;
 }
 
-.form-input:focus-within+.form-icon {
+.form__input:focus-within+.form__icon {
     fill: $background-color-hover;
 }
 
-.form-input:focus-within,
+.form__input:focus-within,
 .feedback:focus-within {
     border-color: $background-color-hover;
     outline: none;
@@ -100,7 +100,7 @@
     background-color: $logo-button-text-color;
 }
 
-.btn-submit {
+.form__btn {
     display: block;
     margin: auto;
     padding-top: 10px;
@@ -120,7 +120,7 @@
     transition: backround-color 250ms $timing-function;
 }
 
-.btn-submit:hover,
-.btn-submit:focus {
+.form__btn:hover,
+.form__btn:focus {
     background-color: $active-button-color;
 }
