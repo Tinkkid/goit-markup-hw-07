@@ -16,6 +16,11 @@
         font-style: normal;
         text-decoration: none;
         transition: color 250ms $timing-function;
+
+        &:hover,
+        &:focus {
+                color: $added-text-color;
+            }
     }
     &__adress {
         color: $added-text-color;
@@ -23,14 +28,12 @@
         font-style: normal;
         text-decoration: none;
         transition: color 250ms $timing-function;
+
+        &:hover,
+        &:focus,{
+                color: $added-text-color;
+            }
     }
-    &__adress:hover,
-    &__adress:focus,
-    &__details:hover,
-    &__details:focus
-     {
-            color: $added-text-color;
-        }
     &__social {
         margin-left: 70px;
     }
