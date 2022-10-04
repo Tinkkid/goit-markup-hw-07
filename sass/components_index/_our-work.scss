@@ -4,11 +4,32 @@
 
 .our-work {
     display: flex;
+
+    &__img {
+            position: relative;
+
+            &:not(:last-child) {
+                    margin-right: 30px;
+                }
+        }
+    &__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 370px;
+        height: 70px;
+        padding: 27px 0;
+        background-color: $background-description;
+    }
+    &__label {
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        color: $added-text-color;
+    }
 }
 
-.our-work__img:not(:last-child) {
-    margin-right: 30px;
-}
 
 .section-title {
     margin-bottom: 50px;
@@ -18,26 +39,4 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-}
-
-.our-work__img {
-    position: relative;
-}
-
-.our-work__overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 370px;
-    height: 70px;
-    padding: 27px 0;
-    background-color: $background-description;
-}
-
-.our-work__label {
-    font-weight: 700;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
-    color: $added-text-color;
 }

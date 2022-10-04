@@ -2,125 +2,111 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $background-color-added;
-}
 
-.footer__general {
-    display: flex;
-    align-items: baseline;
-}
+    &__general {
+            display: flex;
+            align-items: baseline;
+        }
+    &__contacts:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    &__details {
+        color: $text-color-footer;
+        display: inline-block;
+        font-style: normal;
+        text-decoration: none;
+        transition: color 250ms $timing-function;
+    }
+    &__adress {
+        color: $added-text-color;
+        display: inline-block;
+        font-style: normal;
+        text-decoration: none;
+        transition: color 250ms $timing-function;
+    }
+    &__adress:hover,
+    &__adress:focus,
+    &__details:hover,
+    &__details:focus
+     {
+            color: $added-text-color;
+        }
+    &__social {
+        margin-left: 70px;
+    }
 
-.footer__contacts:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.footer__details {
-    color: $text-color-footer;
-    display: inline-block;
-    font-style: normal;
-    text-decoration: none;
-    transition: color 250ms $timing-function;
-}
-
-.footer__adress {
-    color: $added-text-color;
-    display: inline-block;
-    font-style: normal;
-    text-decoration: none;
-    transition: color 250ms $timing-function;
-}
-
-.footer__adress:hover,
-.footer__adress:focus {
-    color: $added-text-color;
-}
-
-.footer__details:hover,
-.footer__details:focus {
-    color: $added-text-color;
 }
 
 .footer__title,
 .subscribe__title {
     display: block;
+    margin-bottom: 20px;
     color: $added-text-color;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.footer__social {
-    margin-left: 70px;
-}
-
-.social-icon--position {
-    margin-top: 20px;
-}
-
 .social-icon__footer {
     background: $background-footer-social;
     fill: $added-text-color;
-}
 
-.social-icon__footer:hover,
-.social-icon__footer:focus {
-    background-color: $logo-button-text-color;
+    &:hover, &:focus {
+        background-color: $logo-button-text-color;
+    }
 }
 
 /* Subscribe form */
 
 .subscribe {
     margin-left: auto;
-}
 
-.subscribe__title {
-    margin-bottom: 20px;
-}
+    &_title {
+            margin-bottom: 20px;
+        }
+    &__label {
+        display: block;
+    }
+    &__input {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        width: 358px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 1.25;
+        background-color: $background-color-added;
+        color: $text-color-footer;
+    }
+    &__btn {
+        position: relative;
+        margin-left: 12px;
+        padding: 10px 62px 10px 28px;
+        background-color: $logo-button-text-color;
+        color: $added-text-color;
+        border-radius: 4px;
+        box-shadow: $shadow-form-button;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        transition: backround-color 250ms $timing-function;
 
-.subscribe__label {
-    display: block;
-}
-
-.subscribe__input {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    width: 358px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.25;
-    background-color: $background-color-added;
-    color: $text-color-footer;
-}
-
-.subscribe__btn {
-    position: relative;
-    margin-left: 12px;
-    padding: 10px 62px 10px 28px;
-    background-color: $logo-button-text-color;
-    color: $added-text-color;
-    border-radius: 4px;
-    box-shadow: $shadow-form-button;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition: backround-color 250ms $timing-function;
-}
-
-.subscribe__btn:hover,
-.subscribe__btn:focus {
-    background-color: $active-button-color;
-}
-
-.subscribe__icon {
-    position: absolute;
-    right: 28px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 10px;
-    fill: $added-text-color;
+        &:hover,
+        &:focus {
+                background-color: $active-button-color;
+            }
+    }
+    &__icon {
+        position: absolute;
+        right: 28px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 10px;
+        fill: $added-text-color;
+    }
 }

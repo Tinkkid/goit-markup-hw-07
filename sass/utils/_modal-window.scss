@@ -49,3 +49,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: $primary-background-color;
 }
+
+.modal__icon:hover,
+.imodal__icon:focus {
+    fill: $background-color-hover;
+}
+
+.modal__icon {
+    fill: currentColor;
+    transition: fill 250ms $timing-function;
+}
