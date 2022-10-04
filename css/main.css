@@ -231,12 +231,6 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.backdrop.is-hidden .modal {
-  -webkit-transform: scale(0.5) translate(-50%, -50%);
-          transform: scale(0.5) translate(-50%, -50%);
-}
-
 .modal__close {
   position: absolute;
   right: 8px;
@@ -258,16 +252,13 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
-
-.modal__icon:hover,
-.imodal__icon:focus {
-  fill: #2196f3;
-}
-
 .modal__icon {
   fill: currentColor;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__icon:hover, .modal__icon:focus {
+  fill: #2196f3;
 }
 
 /* Form for order */
