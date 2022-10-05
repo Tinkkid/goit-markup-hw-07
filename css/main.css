@@ -345,7 +345,7 @@ img {
   margin: 0 auto;
 }
 
-.header__border {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -528,6 +528,9 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal__close:hover .modal__icon, .modal__close:focus .modal__icon {
+  fill: #188ce8;
+}
 .modal__close {
   position: absolute;
   right: 8px;
@@ -548,14 +551,13 @@ img {
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__icon {
   fill: currentColor;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__icon:hover, .modal__icon:focus {
-  fill: #2196f3;
 }
 
 /* Form for order */
@@ -723,11 +725,11 @@ img {
   -webkit-transition: fill 250 ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250 ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox__input:checked + .checkbox__icon > .checkbox__check, .checkbox__input:focus + .checkbox__icon > .checkbox__check {
+.checkbox__input:checked + .checkbox__icon > .checkbox__check {
   opacity: 1;
   fill: #2196f3;
 }
-.checkbox__input:checked + .checkbox__icon > .checkbox__border, .checkbox__input:focus + .checkbox__icon > .checkbox__border {
+.checkbox__input:checked + .checkbox__icon > .checkbox__border {
   opacity: 0;
 }
 
@@ -758,7 +760,7 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.features_icon {
+.features__icon {
   margin-bottom: 30px;
   height: 120px;
   width: 270px;
@@ -836,6 +838,7 @@ img {
 .team__border {
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
   background: #ffffff;
 }
 .team__name {

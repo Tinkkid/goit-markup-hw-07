@@ -29,6 +29,11 @@
     transform: scale(1) translate(-50%, -50%);
     transition: transform 250ms $timing-function;
 
+    &__close:hover &__icon,
+    &__close:focus &__icon {
+        fill: $active-button-color;
+    }
+
     &__close {
             position: absolute;
             right: 8px;
@@ -43,14 +48,12 @@
             cursor: pointer;
             border: 1px solid rgba(0, 0, 0, 0.1);
             background-color: $primary-background-color;
+            transition: fill 250ms $timing-function;
+
         }
+            
     &__icon {
         fill: currentColor;
         transition: fill 250ms $timing-function;
-
-        &:hover,
-        &:focus {
-            fill: $background-color-hover;
-            }
-    }
+        }
 }

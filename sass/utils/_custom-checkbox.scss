@@ -22,14 +22,11 @@
             opacity: 0;
             transition: fill 250 ms $timing-function;
         }
-    &__input:checked + &__icon>&__check,
-    &__input:focus + &__icon>&__check{
+    &__input:checked + &__icon>&__check{
         opacity: 1;
         fill: $background-color-hover;
     }
-    &__input:checked + &__icon>&__border,
-    &__input:focus + &__icon>&__border{
+    &__input:checked + &__icon>&__border{
             opacity: 0;
-        }
-    
+        }    
 }
